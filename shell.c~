@@ -1,0 +1,39 @@
+#include "shell.h"
+#include <string.h>
+
+/**
+ * shell -
+ *
+*/
+
+int shell()
+{
+	int pid1 = fork(), stlen;
+	char *line;
+	size_t len = 0;
+	char *av[] = {"\n",NULL};
+	char *token;
+
+	if (pid1 < 0)
+		return (1);
+	if (pid1 == 0)
+	{
+		printf("#cisfun$ ");
+		getline(&line, &len, stdin);
+		token = strtok(line, "\n");
+		if (line == NULL)
+			return (99);
+		if (execve(token,av, NULL) == -1)
+		{
+			perror("./shell");
+			exit(99);
+			return (99);
+
+		}
+
+	}else
+	{
+		wait(NULL);
+
+	}
+}
