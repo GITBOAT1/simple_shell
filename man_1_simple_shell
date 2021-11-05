@@ -1,0 +1,33 @@
+.\" Manpage for simple shell
+
+.\" Contact boat2320901@yahoo.com or okaforifebuche26@gmail.com in to correct errors or typos.
+
+.TH man 8 "05 November 2021" "1.0" "simple shell man page"
+
+.SH NAME
+
+Simple shell \- function as sh in linux
+
+.SH SYNOPSIS
+
+shell [shell][shell_0.1][shell_0.2][shell_0.3][shell_0.4]
+
+.SH DESCRIPTION
+
+Simple shell is a shell which has a function as sh in linux, administrators should usually use ./shell instead.
+
+.SH OPTIONS
+
+The simple shell 0.1 does not take any options. However, you can supply options to shell 0.2, 0.3, 0.4.
+
+.SH SEE ALSO
+
+shell_0.1, shell_0.2, shell_0.3, shell_0.4
+
+.SH BUGS
+
+No known bugs.
+
+.SH AUTHORS
+
+JOSEPH BOATENG and OKAFOR EMMANUEL
